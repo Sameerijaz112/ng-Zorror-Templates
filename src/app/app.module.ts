@@ -44,6 +44,7 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzSpaceModule } from 'ng-zorro-antd/space';
 import { NzUploadModule } from 'ng-zorro-antd/upload';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 @NgModule({
     declarations: [
         AppComponent,
@@ -93,7 +94,8 @@ import { NzUploadModule } from 'ng-zorro-antd/upload';
         NzDividerModule,
         NzLayoutModule,
         NzSpaceModule,
-        NzUploadModule
+        NzUploadModule,
+        NzDropDownModule
     ],
     providers: []
 })

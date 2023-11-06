@@ -60,3 +60,10 @@
   margin-right: 8px;
   margin-bottom: 12px;
 }
+a {
+  color: #000000 !important;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color .3s;
+  -webkit-text-decoration-skip: objects;
+}
