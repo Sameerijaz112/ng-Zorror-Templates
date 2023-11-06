@@ -8,7 +8,12 @@ import { appModuleAnimation } from '@shared/animations/routerTransition';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AboutComponent extends AppComponentBase {
+  index = 0;
+  disable = false;
   constructor(injector: Injector) {
     super(injector);
+  }
+  onIndexChange(index: number): void {
+    this.index = index;
   }
 }

@@ -48,6 +48,8 @@ import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzTagModule } from 'ng-zorro-antd/tag';
+import { NzPaginationModule } from 'ng-zorro-antd/pagination';
+import { NzStepsModule } from 'ng-zorro-antd/steps';
 @NgModule({
     declarations: [
         AppComponent,
@@ -101,7 +103,9 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
         NzDropDownModule,
         NzPageHeaderModule,
         NzBreadCrumbModule,
-        NzTagModule
+        NzTagModule,
+        NzPaginationModule,
+        NzStepsModule
     ],
     providers: []
 })
