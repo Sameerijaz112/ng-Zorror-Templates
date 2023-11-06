@@ -45,6 +45,9 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzSpaceModule } from 'ng-zorro-antd/space';
 import { NzUploadModule } from 'ng-zorro-antd/upload';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
+import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import { NzTagModule } from 'ng-zorro-antd/tag';
 @NgModule({
     declarations: [
         AppComponent,
@@ -95,7 +98,10 @@ import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
         NzLayoutModule,
         NzSpaceModule,
         NzUploadModule,
-        NzDropDownModule
+        NzDropDownModule,
+        NzPageHeaderModule,
+        NzBreadCrumbModule,
+        NzTagModule
     ],
     providers: []
 })
