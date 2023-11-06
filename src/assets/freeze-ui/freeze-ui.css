@@ -99,3 +99,12 @@
   text-align: center;
   vertical-align: 2px !important;
 }
+.certain-search-item-count {
+  position: absolute;
+  color: #999;
+  right: 16px;
+}
+
+.more-link {
+  float: right;
+}

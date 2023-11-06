@@ -50,6 +50,9 @@ import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzTagModule } from 'ng-zorro-antd/tag';
 import { NzPaginationModule } from 'ng-zorro-antd/pagination';
 import { NzStepsModule } from 'ng-zorro-antd/steps';
+import { NzAutocompleteModule } from 'ng-zorro-antd/auto-complete';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzTypographyModule } from 'ng-zorro-antd/typography';
 @NgModule({
     declarations: [
         AppComponent,
@@ -105,7 +108,10 @@ import { NzStepsModule } from 'ng-zorro-antd/steps';
         NzBreadCrumbModule,
         NzTagModule,
         NzPaginationModule,
-        NzStepsModule
+        NzStepsModule,
+        NzAutocompleteModule,
+        NzInputModule,
+        NzTypographyModule
     ],
     providers: []
 })
