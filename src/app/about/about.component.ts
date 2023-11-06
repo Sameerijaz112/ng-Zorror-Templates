@@ -1,6 +1,9 @@
 import { Component, Injector, ChangeDetectionStrategy } from '@angular/core';
 import { AppComponentBase } from '@shared/app-component-base';
 import { appModuleAnimation } from '@shared/animations/routerTransition';
+import { getISOWeek } from 'date-fns';
+
+import { en_US, NzI18nService, zh_CN } from 'ng-zorro-antd/i18n';
 export interface AutocompleteOptionGroups {
   title: string;
   count?: number;
@@ -13,6 +16,11 @@ export interface AutocompleteOptionGroups {
 })
 
 export class AboutComponent extends AppComponentBase {
+  date = null;
+  isEnglish = false;
+  dateFormat = 'yyyy/MM/dd';
+  monthFormat = 'yyyy/MM';
+  checked = true;
   inputValue?: string;
   optionGroups: AutocompleteOptionGroups[] = [];
   index = 0;
@@ -20,6 +28,7 @@ export class AboutComponent extends AppComponentBase {
   constructor(injector: Injector) {
     super(injector);
   }
+  
   onChange(value: string): void {
     console.log(value);
   }
