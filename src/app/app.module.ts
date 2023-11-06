@@ -41,6 +41,8 @@ import { SidebarMenuComponent } from './layout/sidebar-menu.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzSpaceModule } from 'ng-zorro-antd/space';
 @NgModule({
     declarations: [
         AppComponent,
@@ -87,7 +89,9 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
         NgxPaginationModule,
         NzButtonModule,
         NzIconModule,
-        NzDividerModule
+        NzDividerModule,
+        NzLayoutModule,
+        NzSpaceModule
     ],
     providers: []
 })
