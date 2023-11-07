@@ -1,4 +1,4 @@
-﻿<p>
+﻿<!-- <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae
   sunt a te dicta? Refert tamen, quo modo.
 </p>
@@ -44,83 +44,7 @@
     <li nz-menu-item nzDisabled>3rd menu item（disabled）</li>
   </ul>
 </nz-dropdown-menu>
-<!-- <nz-page-header class="site-page-header mt-3">
 
-  <nz-breadcrumb nz-page-header-breadcrumb>
-    <nz-breadcrumb-item>First-level Menu</nz-breadcrumb-item>
-    <nz-breadcrumb-item>
-      <a>Second-level Menu</a>
-    </nz-breadcrumb-item>
-    <nz-breadcrumb-item>Third-level Menu</nz-breadcrumb-item>
-  </nz-breadcrumb>
-
-  <nz-page-header-subtitle>This is a subtitle</nz-page-header-subtitle>
-
-
-  <nz-page-header-tags>
-    <nz-tag [nzColor]="'blue'">Running</nz-tag>
-  </nz-page-header-tags>
-
-  <nz-page-header-extra>
-    <nz-space>
-      <button *nzSpaceItem nz-button>Operation</button>
-      <button *nzSpaceItem nz-button>Operation</button>
-      <button *nzSpaceItem nz-button nzType="primary">Primary</button>
-      <button
-        *nzSpaceItem
-        nz-button
-        nzNoAnimation
-        nz-dropdown
-        [nzDropdownMenu]="menu"
-        nzPlacement="bottomRight"
-        style="border: none; padding: 0"
-      >
-        <span nz-icon nzType="more" nzTheme="outline" style="font-size: 20px; vertical-align: top;"></span>
-      </button>
-    </nz-space>
-    <nz-dropdown-menu #menu="nzDropdownMenu">
-      <ul nz-menu>
-        <li nz-menu-item>1st menu item length</li>
-        <li nz-menu-item>2nd menu item length</li>
-        <li nz-menu-item>3rd menu item length</li>
-      </ul>
-    </nz-dropdown-menu>
-  </nz-page-header-extra>
-
-
-  <nz-page-header-content>
-    <div nz-row>
-      <div class="content">
-        <p nz-paragraph>
-          Ant Design interprets the color system into two levels: a system-level color system and a product-level
-          color system.
-        </p>
-        <p nz-paragraph>
-          Ant Design's design team preferred to design with the HSB color model, which makes it easier for designers
-          to have a clear psychological expectation of color when adjusting colors, as well as facilitate
-          communication in teams.
-        </p>
-        <div class="content-link">
-          <a>
-            <img src="https://gw.alipayobjects.com/zos/rmsportal/MjEImQtenlyueSmVEfUD.svg" alt="start" />
-            Quick Start
-          </a>
-          <a>
-            <img src="https://gw.alipayobjects.com/zos/rmsportal/NbuDUAuBlIApFuDvWiND.svg" alt="info" />
-            Product Info
-          </a>
-          <a>
-            <img src="https://gw.alipayobjects.com/zos/rmsportal/ohOEPSYdDTNnyMbGuyLb.svg" alt="doc" />
-            Product Doc
-          </a>
-        </div>
-      </div>
-      <div class="content-image">
-        <img src="https://gw.alipayobjects.com/zos/antfincdn/K%24NnlsB%26hz/pageHeader.svg" alt="content" />
-      </div>
-    </div>
-  </nz-page-header-content>
-</nz-page-header> -->
 
 <nz-pagination [nzPageIndex]="3" [nzTotal]="500" nzShowSizeChanger [nzPageSize]="10"></nz-pagination>  
 <nz-steps [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
@@ -202,4 +126,43 @@
 
 <nz-rate [ngModel]="2.5" nzAllowHalf></nz-rate> 
 
-<nz-time-picker [(ngModel)]="time" [nzDefaultOpenValue]="defaultOpenValue"></nz-time-picker>
+<nz-time-picker [(ngModel)]="time" [nzDefaultOpenValue]="defaultOpenValue"></nz-time-picker> -->
+<tui-accordion class="container">
+  <tui-accordion-item>
+      Taiga UI cdk
+      <ng-template tuiAccordionItemContent>
+          Development kit consisting of the low level tools and abstractions used to develop Taiga UI Angular entities
+      </ng-template>
+  </tui-accordion-item>
+  <tui-accordion-item>
+      Taiga UI core
+      <ng-template tuiAccordionItemContent>
+          <div #content>
+              Basic elements needed to develop components, directives and more using Taiga UI design system
+          </div>
+      </ng-template>
+  </tui-accordion-item>
+  <tui-accordion-item>
+      Taiga UI kit
+      <ng-template tuiAccordionItemContent>
+          The main set of components used to build Taiga UI based Angular applications
+      </ng-template>
+  </tui-accordion-item>
+</tui-accordion>
+<tui-accordion-item class="container"> 
+  Taiga UI cdk
+  <ng-template tuiAccordionItemContent>
+      Development kit consisting of the low level tools and abstractions used to develop Taiga UI Angular entities
+  </ng-template>
+</tui-accordion-item> 
+<button
+    tuiAction
+    type="button"
+    class="action"
+>
+    <section>
+        <h3 class="header tui-text_body-s">Header</h3>
+        <p class="description tui-text_body-xs">Description</p>
+    </section>
+
+</button>

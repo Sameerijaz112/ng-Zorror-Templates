@@ -1,3 +1,5 @@
+import { NgDompurifySanitizer } from "@tinkoff/ng-dompurify";
+import { TuiRootModule, TuiDialogModule, TuiAlertModule, TUI_SANITIZER } from "@taiga-ui/core";
 import { NgModule, APP_INITIALIZER, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -40,7 +42,10 @@ export function getCurrentLanguage(): string {
     TabsModule.forRoot(),
     ServiceProxyModule,
     RootRoutingModule,
-  ],
+        TuiRootModule,
+        TuiDialogModule,
+        TuiAlertModule
+    ],
   declarations: [RootComponent],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AbpHttpInterceptor, multi: true },
@@ -55,7 +60,8 @@ export function getCurrentLanguage(): string {
       provide: LOCALE_ID,
       useFactory: getCurrentLanguage,
     },
-  ],
+      {provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}
+],
   bootstrap: [RootComponent],
 })
 export class RootModule {}

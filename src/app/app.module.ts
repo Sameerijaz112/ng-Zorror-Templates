@@ -58,7 +58,9 @@ import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzRateModule } from 'ng-zorro-antd/rate';
 import { NzTimePickerModule } from 'ng-zorro-antd/time-picker';
-
+import {TuiAccordionModule} from '@taiga-ui/kit';
+import {TuiRootModule} from '@taiga-ui/core';
+import {TuiActionModule} from '@taiga-ui/kit';
 @NgModule({
     declarations: [
         AppComponent,
@@ -122,7 +124,10 @@ import { NzTimePickerModule } from 'ng-zorro-antd/time-picker';
         NzDatePickerModule,
         NzFormModule,
         NzRateModule,
-        NzTimePickerModule
+        NzTimePickerModule,
+        TuiAccordionModule,
+        TuiRootModule,
+        TuiActionModule
     ],
     providers: []
 })

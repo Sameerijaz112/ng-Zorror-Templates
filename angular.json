@@ -28,16 +28,26 @@
                 "glob": "abp.signalr-client.js",
                 "input": "node_modules/abp-web-resources/Abp/Framework/scripts/libs",
                 "output": "/assets/abp"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@taiga-ui/icons/src",
+                "output": "assets/taiga-ui/icons"
               }
             ],
             "styles": [
+              "node_modules/@taiga-ui/core/styles/taiga-ui-theme.less",
+              "node_modules/@taiga-ui/core/styles/taiga-ui-fonts.less",
+              "node_modules/@taiga-ui/styles/taiga-ui-global.less",
               "node_modules/famfamfam-flags/dist/sprite/famfamfam-flags.css",
               "node_modules/sweetalert2/dist/sweetalert2.css",
               "src/assets/freeze-ui/freeze-ui.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "node_modules/admin-lte-css-only/css/adminlte.min.css",
               "src/shared/core.less",
-              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+              "node_modules/@taiga-ui/core/styles/taiga-ui-theme.less",
+              "node_modules/@taiga-ui/core/styles/taiga-ui-fonts.less"
             ],
             "scripts": [
               "node_modules/moment/min/moment.min.js",
@@ -144,7 +154,9 @@
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "node_modules/admin-lte-css-only/css/adminlte.min.css",
               "src/shared/core.less",
-              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+              "node_modules/@taiga-ui/core/styles/taiga-ui-theme.less",
+              "node_modules/@taiga-ui/core/styles/taiga-ui-fonts.less"
             ],
             "scripts": [
               "node_modules/moment/min/moment.min.js",
@@ -179,7 +191,7 @@
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
-      "style": "css"
+      "style": "less"
     },
     "@schematics/angular:directive": {
       "prefix": "app"

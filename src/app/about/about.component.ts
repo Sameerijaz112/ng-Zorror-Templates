@@ -11,7 +11,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { registerLocaleData } from '@angular/common';
 export interface AutocompleteOptionGroups {
   title: string;
-  count?: number;
+  count?: number; 
   children?: AutocompleteOptionGroups[];
 }
 @Component({
