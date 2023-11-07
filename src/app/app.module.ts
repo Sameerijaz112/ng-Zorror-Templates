@@ -56,6 +56,9 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzRateModule } from 'ng-zorro-antd/rate';
+import { NzTimePickerModule } from 'ng-zorro-antd/time-picker';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -117,7 +120,9 @@ import { NzFormModule } from 'ng-zorro-antd/form';
         NzTypographyModule,
         NzCheckboxModule,
         NzDatePickerModule,
-        NzFormModule
+        NzFormModule,
+        NzRateModule,
+        NzTimePickerModule
     ],
     providers: []
 })

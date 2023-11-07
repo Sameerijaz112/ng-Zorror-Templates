@@ -2,9 +2,13 @@ import { Component, Injector, ChangeDetectionStrategy } from '@angular/core';
 import { AppComponentBase } from '@shared/app-component-base';
 import { appModuleAnimation } from '@shared/animations/routerTransition';
 import { getISOWeek } from 'date-fns';
-
+import en from '@angular/common/locales/en';
+import fr from '@angular/common/locales/fr';
+registerLocaleData(en);
+registerLocaleData(fr);
 import { en_US, NzI18nService, zh_CN } from 'ng-zorro-antd/i18n';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { registerLocaleData } from '@angular/common';
 export interface AutocompleteOptionGroups {
   title: string;
   count?: number;
@@ -17,7 +21,8 @@ export interface AutocompleteOptionGroups {
 })
 
 export class AboutComponent extends AppComponentBase {
- 
+  time: Date | null = null;
+  defaultOpenValue = new Date(0, 0, 0, 0, 0, 0);
   date = null;
   isEnglish = false;
   dateFormat = 'yyyy/MM/dd';
