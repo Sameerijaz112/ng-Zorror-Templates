@@ -4,6 +4,7 @@ import { appModuleAnimation } from '@shared/animations/routerTransition';
 import { getISOWeek } from 'date-fns';
 
 import { en_US, NzI18nService, zh_CN } from 'ng-zorro-antd/i18n';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 export interface AutocompleteOptionGroups {
   title: string;
   count?: number;
@@ -16,6 +17,7 @@ export interface AutocompleteOptionGroups {
 })
 
 export class AboutComponent extends AppComponentBase {
+ 
   date = null;
   isEnglish = false;
   dateFormat = 'yyyy/MM/dd';
